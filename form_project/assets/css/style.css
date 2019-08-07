@@ -1,0 +1,292 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+	width: 1024px;
+}
+
+header{
+	background-color: #DDD
+}
+
+.head{
+	font-size: 25px;
+	margin: 10px;
+	font-weight: bold;
+
+}
+
+.camp{
+	text-align: right;
+	margin: 5px;
+}
+
+.camp2{
+	margin: 5px;
+}
+
+
+
+.container_form{
+	margin: 5px;
+	padding: 20px 20px 10px 20px;
+	display: flex;
+	justify-content: space-around;
+	width: 1024px;
+}
+
+.container_form_inside{
+	margin: 5px;
+}
+
+.container_inside{
+	flex:1;
+	margin: 5px;
+	display: flex;
+	flex-flow: column;
+}
+
+.container_inside_name{
+	margin: 5px;
+	font-weight: bold;
+}
+
+.container_inside_table{
+	margin: 5px;
+}
+
+
+
+.radio{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.submit{
+	border-radius: 5px;
+	margin-top: 15px;
+
+
+}
+
+.less{
+	font-size: 10px;
+	font-style: italic;
+}
+
+.bottom {
+	background-color:#000;
+	color: #FFF;
+	width: 1024px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+	font-weight: bold;
+	font-style: italic;
+}
+.eu{
+	padding-left: 10px;
+}
+
+.eu img{
+	height: 50px;
+	border-radius: 50px;
+}
+
+@media (max-width: 769px) {
+	.container{
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		width: 760px;
+	}
+
+	.head{
+		display: flex;
+		justify-content: center;
+	}
+	.container_form {
+	    display: flex;
+	    flex-flow: column wrap;
+	}
+	.container_inside_name {
+		display: flex;
+		justify-content: center;
+	    margin: 5px;
+	    font-weight: bold;
+	}
+	.radio {
+	    display: flex;
+	    flex-flow: column;
+	}
+
+	.bottom {
+		background-color:#000;
+		color: #FFF;
+		width: 768px;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+
+}
+
+@media (max-width: 426px) {
+	.container{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		width: 426px;
+	}
+
+	.head{
+		display: flex;
+		justify-content: center;
+	}
+	.container_form {
+	    display: flex;
+	    flex-flow: column wrap;
+	}
+	.container_inside_name {
+		display: flex;
+		justify-content: center;
+	    margin: 5px;
+	    font-weight: bold;
+	}
+	.radio {
+	    display: flex;
+	    flex-flow: column;
+	}
+
+	.bottom {
+		background-color:#000;
+		color: #FFF;
+		width: 426px;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+
+}
+
+@media (max-width: 376px) {
+	.container{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		width: 375px;
+	}
+
+	.head{
+		display: flex;
+		justify-content: center;
+	}
+	.container_form {
+	    display: flex;
+	    flex-flow: column wrap;
+	}
+	.container_inside_name {
+		display: flex;
+		justify-content: center;
+	    margin: 5px;
+	    font-weight: bold;
+	}
+	.radio {
+	    display: flex;
+	    flex-flow: column;
+	}
+
+	.bottom {
+		background-color:#000;
+		color: #FFF;
+		width: 375px;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+
+}
+
+@media (max-width: 321px) {
+	.container{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		width: 320px;
+	}
+
+	.head{
+		display: flex;
+		justify-content: center;
+	}
+	.container_form {
+	    display: flex;
+	    flex-flow: column wrap;
+	}
+	.container_inside_name {
+		display: flex;
+		justify-content: center;
+	    margin: 5px;
+	    font-weight: bold;
+	}
+	.radio {
+	    display: flex;
+	    flex-flow: column;
+	}
+
+	.bottom {
+		background-color:#000;
+		color: #FFF;
+		width: 320px;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+
+}
+
+
+
+
+
+
+
+

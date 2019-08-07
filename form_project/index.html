@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="head">Formulário Teste</div>
+		</div>
+	</header>
+	<form method="POST"></form>
+		<div class="container">
+			<div class="container_form">
+				<div class="container_form_inside">
+					<table>
+						<tr>
+							<td>
+								<div class="camp">E-mail</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="e-mail" name="e-mail" placeholder="e-mail" required>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Repetir e-mail</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="e-mail" name="e-mail" placeholder="e-mail" required>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="container_form_inside">
+					<table>
+						<tr>
+							<td>
+								<div class="camp">Senha</div></td>
+							<td>
+								<div class="camp2">
+									<input type="password" name="password" placeholder="senha" required maxlength="8">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Repetir senha</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="password" name="password" placeholder="senha" required maxlength="8">
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="container_inside">
+				<div class="container_inside_name">Dados Cadastrais</div>
+				<div class="container_inside_table">
+					<table>
+						<tr>
+							<td></td>
+							<td class="radio">
+								<div>
+									<input type="radio" name="radio" value="PF">Pessoa Física
+								</div>
+								<div>
+									<input type="radio" name="radio" value="PJ">Pessoa Jurídica
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Nome</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="name" placeholder="name">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Sobrenome</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="name" placeholder="surname">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Sexo</div>
+							</td>
+							<td class="radio">
+								<div>
+									<div class="camp2">
+										<select id="estado" name="estado" required>
+											<option>Masculino</option>
+											<option>Feminino</option>
+										</select>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">CPF</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="cpf" maxlength="12" placeholder=" ___.___.___-__">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Telefone</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="tel" name="tel" maxlength="8" pattern="[0-9]{8}" placeholder=" ____.____">
+									<span class="less">Formato: 99999999</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Celular</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="tel" name="cel" maxlength="9" pattern="[0-9]{9}" placeholder=" ___.___.___">
+									<span class="less">Formato: 999999999</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Nascimento</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="date" name="birthday" max="2001-12-31" min="1919-12-31">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<div class="camp2">
+									<input type="checkbox" name="checkbox">Receber ofertas e novidades por e-mail
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" name="submit" value="Cadastrar" class="submit">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+				
+			<div class="container_inside">
+				<div class="container_inside_name">Endereço de Entrega</div>
+				<div class="container_inside_table">
+					<table>
+						<tr>
+							<td>
+								<div class="camp">CEP</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="CEP" maxlength="8" pattern="[0-9]{8}" required placeholder=" _____-__">
+									<span class="less">Formato 00000000</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Rua</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="street" required>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Número</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="number" name="house_number" min="1" maxlength="10000000" >
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp"></div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="checkbox" name="no_number" required>Sem número
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Complemento</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="house_complement" required>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Referência</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="referencia" required>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="camp">Bairro</div>
+							</td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="neighborhood" required>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><div class="camp">Cidade</div></td>
+							<td>
+								<div class="camp2">
+									<input type="text" name="city" required>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><div class="camp">Estado</div></td>
+							<td>
+								<div class="camp2">
+									<select id="estado" name="estado" required>
+									    <option value="AC">Acre</option>
+									    <option value="AL">Alagoas</option>
+									    <option value="AP">Amapá</option>
+									    <option value="AM">Amazonas</option>
+									    <option value="BA">Bahia</option>
+									    <option value="CE">Ceará</option>
+									    <option value="DF">Distrito Federal</option>
+									    <option value="ES">Espírito Santo</option>
+									    <option value="GO">Goiás</option>
+									    <option value="MA">Maranhão</option>
+									    <option value="MT">Mato Grosso</option>
+									    <option value="MS">Mato Grosso do Sul</option>
+									    <option value="MG">Minas Gerais</option>
+									    <option value="PA">Pará</option>
+									    <option value="PB">Paraíba</option>
+									    <option value="PR">Paraná</option>
+									    <option value="PE">Pernambuco</option>
+									    <option value="PI">Piauí</option>
+									    <option value="RJ">Rio de Janeiro</option>
+									    <option value="RN">Rio Grande do Norte</option>
+									    <option value="RS">Rio Grande do Sul</option>
+									    <option value="RO">Rondônia</option>
+									    <option value="RR">Roraima</option>
+									    <option value="SC">Santa Catarina</option>
+									    <option value="SP">São Paulo</option>
+									    <option value="SE">Sergipe</option>
+									    <option value="TO">Tocantins</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+				
+		</div>
+	</form>
+	<bottom>
+		<div class="container">
+			<div class="bottom">
+				<div>Coded by Pascal Fuentes</div>
+				<div class="eu">
+					<img src="assets/images/eu.png">
+				</div>
+			</div>
+		</div>
+	</bottom>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
