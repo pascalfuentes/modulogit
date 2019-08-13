@@ -1,8 +1,9 @@
 function verify() {
+
 	var n1 = document.getElementById("n1").innerHTML;
 	var n2 = document.getElementById("n2").value;
 
-	if(n1 == n2) {
+	if (n1 == n2) {
 		alert("CONGRATULATIONS!!! YOU TYPE THE RIGHT NUMBER!!!")
 	} else {
 		if (n1<n2) {
