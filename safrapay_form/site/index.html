@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Sat Aug 24 2019 23:53:21 GMT+0000 (UTC)  -->
+<html data-wf-page="5d5d9e6cceb1531834710e37" data-wf-site="5d5d9e6cceb1532b9e710e36">
+<head>
+  <meta charset="utf-8">
+  <title>Safrapay_form</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/safrapay-form.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="icons/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+<a href="#" class="chat_button w-button">...Posso Ajudar?<br>(chat)</a>
+  <div data-animation="slide" data-hide-arrows="1" data-disable-swipe="1" data-duration="500" class="slider w-slider">
+    <div class="mask w-slider-mask">
+      <div class="etapa_1 w-slide">
+        <section id="section_1" class="section_1">
+          <div class="container w-container">
+            <div class="div_container">
+              <h1 class="titulo_maquina_gratis">Peça sua MÁQUINA GRÁTIS</h1>
+              <p class="texto_maquina_gratis">E aproveite para ter TAXA ZERO¹ no crédito à vista e parcelado</p>
+              <div class="lista_informacoes">
+                <ul class="list">
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Cartão de débito Grátis</div>
+                  </li>
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Aplicativo para acompanhar vendas</div>
+                  </li>
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Receba a máquina em até 7 dias</div>
+                  </li>
+                </ul>
+                <div class="div-block-5"><img src="images/machines_all.png" alt="" class="image">
+                  <p class="paragraph">A escolha das máquinas será feita na terceira etapa</p>
+                </div>
+              </div>
+              <div class="div_container_down">
+                <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+                  <div class="tabs-menu-2 w-tab-menu">
+                    <a data-w-tab="Tab 1" class="pf_pj_tab w-inline-block w-tab-link w--current">
+                      <div class="text-block-19">PARA SUA EMPRESA</div>
+                    </a>
+                    <a data-w-tab="Tab 2" class="pf_pj_tab w-inline-block w-tab-link">
+                      <div class="text-block-20">PARA VOCÊ</div>
+                    </a>
+                  </div>
+                  <div class="w-tab-content">
+                    <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+                      <div class="w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" method="post" redirect="https://safrapay-form.webflow.io/pj" data-redirect="https://safrapay-form.webflow.io/pj"><label for="name-4" class="pj_cnpj">CNPJ / MEI</label><input type="number" class="pj_cnpj_input w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="00.000.000/0000-00" id="name-2" required=""><label for="Email-9" class="pj_email">E-mail</label><input type="email" class="pj_email_input w-input" maxlength="256" name="Email-7" data-name="Email 7" placeholder="financeiro@financeiro.com.br" id="Email-7" required=""><label for="Email-9" class="pj_email_confirmar">Confirmar E-mail</label><input type="email" class="pj_email_confirmar_input w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="financeiro@financeiro.com.br" id="Email-6" required="">
+                          <div class="div-block-7"><label for="email-9" class="pj_telefone">Telefone celular<span class="text-span-5"> (para receber a sua senha de acesso e contatos pelo Whatsapp      ) </span></label><img src="images/whatsapp-logo.svg" alt="" class="image-2"></div><input type="tel" class="pj_telefone_input w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="(00)00000-0000" id="Phone-2" required="">
+                          <div class="div-block-8"><input type="submit" value="Continuar" data-wait="Please wait..." class="botao_continuar_pj w-button"></div>
+                        </form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-tab="Tab 2" class="w-tab-pane">
+                      <div class="w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" method="post"><label for="name-4" class="pf_nome">Nome</label><input type="text" class="pf_nome_input w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="José da Silva" id="name-4" required=""><label for="CPF-3" class="pf_cpf">CPF</label><input type="number" class="pf_cpf_input w-input" maxlength="256" name="CPF-3" data-name="CPF 3" placeholder="000.000.000-00" id="CPF-3" required=""><label for="Email-9" class="pf_email">E-mail</label><input type="email" class="pf_email_input w-input" maxlength="256" name="Email-9" data-name="Email 9" placeholder="josedasilva@josedasilva.com.br" id="Email-9" required=""><label for="Email-10" class="pf_email_confirmar">Confirmar E-mail</label><input type="email" class="pf_email_confirmar_input w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="josedasilva@josedasilva.com.br" id="Email-6" required="">
+                          <div class="div-block-7"><label for="email-10" class="pf_telefone">Telefone celular (para receber a sua senha de acesso e contatos pelo Whatsapp      ) </label><img src="images/whatsapp-logo.svg" alt="" class="image-2"></div><input type="tel" class="pf_telefone_input w-input" maxlength="256" name="Phone-4" data-name="Phone 4" placeholder="(00) 00000-0000" id="Phone-4" required="">
+                          <div class="div-block-8"><input type="submit" value="Continuar" data-wait="Please wait..." class="botao_continuar_pf w-button"></div>
+                        </form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-3 w-container">
+            <div class="div-block-11">
+              <div class="text-block-2">1 Taxa de MDR 0% nas transações de crédito à vista e crédito parcelado limitado ao volume total de vendas de R$ 50 mil por mês. Máquina grátis (comodato) para faturamento acima de R$ 1,5 mil/mês.</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="etapa_2_pf" class="etapa_2_pf w-slide">
+        <section id="section_2" class="section_2">
+          <div class="container w-container">
+            <div class="div_container">
+              <h1 class="titulo_maquina_gratis">Peça sua MÁQUINA GRÁTIS</h1>
+              <p class="texto_maquina_gratis">E aproveite para ter TAXA ZERO¹ no crédito à vista e parcelado</p>
+              <div class="lista_informacoes">
+                <ul class="list">
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Cartão de débito Grátis</div>
+                  </li>
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Aplicativo para acompanhar vendas</div>
+                  </li>
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Receba a máquina em até 7 dias</div>
+                  </li>
+                </ul>
+                <div class="div-block-5"><img src="images/machines_all.png" alt="" class="image">
+                  <p class="paragraph">A escolha das máquinas será feita na terceira etapa</p>
+                </div>
+              </div>
+              <div class="div_container_down">
+                <div data-duration-in="300" data-duration-out="100" class="w-tabs">
+                  <div class="w-tab-menu">
+                    <a data-w-tab="Tab 2" class="pf_pj_tab w-inline-block w-tab-link w--current">
+                      <div>PARA PESSOA FÍSICA</div>
+                    </a>
+                  </div>
+                  <div class="w-tab-content">
+                    <div data-w-tab="Tab 2" class="w-tab-pane w--tab-active">
+                      <div class="w-form">
+                        <div>
+                          <div class="div-block-28">
+                            <h4 class="heading">Dados pessoais</h4><a href="#" class="link">Corrigir</a></div>
+                          <ul class="list-2 w-list-unstyled">
+                            <li>
+                              <div>Nome: Allysson Cruz Carvalho de Oliveira</div>
+                            </li>
+                            <li>
+                              <div>CPF: 40741793857</div>
+                            </li>
+                            <li>
+                              <div>E-mail: allyssoncarvalhoc@gmail.com</div>
+                            </li>
+                            <li>
+                              <div>Telefone: 11930005154</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <form id="email-form" name="email-form" data-name="Email Form">
+                          <div><label for="name-5" class="field-label-9">Data de nascimento (dia/mês/ano)</label><input type="number" class="text-field w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="00/00/1900" id="name-3" required=""><label for="CPF-4" class="field-label-10">Nome completo da mãe</label><input type="text" class="text-field-2 w-input" maxlength="256" name="CPF-2" data-name="CPF 2" placeholder="Maria de Souza" id="CPF-2" required=""></div>
+                          <div>
+                            <h4 class="endereo_residencial_pf">Endereço residencial</h4>
+                            <div class="div-block-13">
+                              <div class="div-block-14"><label for="Email-10" class="field-label-11">CEP</label><input type="number" class="text-field-3 w-input" maxlength="256" name="Email-8" data-name="Email 8" placeholder="00000-000" id="Email-8" required=""></div><a href="#" class="button w-button">Cep Validado</a></div>
+                            <div class="div-block-15">
+                              <div class="div-block-19"><label class="field-label-12">Endereço</label><input type="text" class="text-field-4 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Logradouro" id="Phone-3" required=""></div>
+                              <div class="div-block-20"><label class="field-label-13">Número</label><input type="number" class="text-field-5 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="000" id="Phone-3" required=""></div>
+                            </div>
+                            <div class="div-block-16">
+                              <div class="div-block-21"><label class="field-label-15">Complemento</label><input type="number" class="text-field-6 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                              <div class="div-block-22"><label class="field-label-14">Bairro</label><input type="text" class="text-field-7 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Centro" id="Phone-3" required=""></div>
+                            </div>
+                            <div class="div-block-17">
+                              <div class="div-block-23"><label class="field-label-16">Estado</label><select id="Estado-3" name="Estado-3" data-name="Estado 3" required="" class="select-field w-select"><option value="">Selecionar</option><option value="acre">AC</option><option value="alagoas">AL</option><option value="amapa">AP</option><option value="amazonas">AM</option><option value="bahia">BA</option><option value="ceara">CE</option><option value="distrito_federal">DF</option><option value="espirito_santo">ES</option><option value="goias">GO</option><option value="maranhao">MA</option><option value="mato_grosso">MT</option><option value="mato_grosso_sul">MS</option><option value="minas_gerais">MG</option><option value="para">PA</option><option value="paraiba">PB</option><option value="parana">PR</option><option value="pernambuco">PE</option><option value="piaui">PI</option><option value="rio_de_janeiro">RJ</option><option value="rio_grande_norte">RN</option><option value="rio_grande_sul">RS</option><option value="rondonia">RO</option><option value="roraima">RR</option><option value="santa_catarina">SC</option><option value="sao_paulo">SP</option><option value="sergipe">SE</option><option value="tocantins">TO</option></select></div>
+                              <div class="div-block-24"><label class="field-label-17">Cidade</label><input type="text" class="text-field-8 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                            </div>
+                          </div>
+                          <div class="div-block-59">
+                            <h4 class="endereo_residencial_pf">Telefones Adicionais</h4>
+                            <div class="div-block-13">
+                              <div class="div-block-25">
+                                <div class="div-block-26"><label class="field-label-18">Telefone Adicional 1</label><input type="tel" class="text-field-9 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="(00) 00000-0000" id="Phone-3" required=""></div>
+                                <div class="div-block-27"><label class="field-label-19">Telefone Adicional 2</label><input type="tel" class="text-field-10 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="(00) 00000-0000" id="Phone-3" required=""></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-58">
+                            <h4 class="endereo_residencial_pf">Selecione a atividade principal</h4><select id="atividade_option-2" name="atividade_option-2" data-name="Atividade Option 2" required="" class="select-field-2 w-select"><option value="">Escolha a mais adequada</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                          <div class="div-block-8"><input type="submit" value="Continuar" data-wait="Please wait..." class="continue_button w-button"></div>
+                        </form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div><a href="#tab_1">Voltar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="etapa_3_pf w-slide">
+        <section id="section_2">
+          <div class="container w-container">
+            <div class="div_top">
+              <h4 class="heading-16">MÁQUINAS DISPONÍVEIS</h4>
+              <div>
+                <div class="w-form">
+                  <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
+                    <div class="div-block-29">
+                      <div class="maquininha_div"><img src="images/safrapay_bobina.png" alt="" class="maquininha_image com_bobina"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 6" id="radio-6" name="radio" value="Radio" required="" class="radio-button w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>com bobina<br>3G + Wi-Fi</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 7.000,00</strong><br></p>
+                      </div>
+                      <div class="maquininha_div"><img src="images/safrapay_sem_bobina.png" alt="" class="maquininha_image sem_bobina_image"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 7" id="radio-7" name="radio" value="Radio" required="" class="w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>sem bobina<br>3G + Wi-Fi</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 5.000,00</strong></p>
+                      </div>
+                      <div class="maquininha_div"><img src="images/safrapay_sem_bobina_gprs.png" alt="" class="maquininha_image"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 8" id="radio-8" name="radio" value="Radio" required="" class="w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>sem bobina<br>GPRS</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 3.000,00</strong></p>
+                      </div>
+                      <div class="maquininha_div"><img src="images/safrapay_celular.png" alt="" class="maquininha_image image_com_celular"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 9" id="radio-9" name="radio" value="Radio" required="" class="w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>sem bobina<br>via Bluetooth</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 1.500,00</strong></p>
+                      </div>
+                    </div>
+                    <div class="div-block-35">
+                      <h4 class="heading-2">Aproveite taxa de <span class="text-span">0%</span> no crédito à vista e parcelado</h4>
+                      <div class="text-block-10">nos primeiros R$ 50 mil em vendas totais por mês</div>
+                    </div>
+                    <div class="div-block-34">
+                      <div>
+                        <h4 class="heading-17">Cartão de Crédito</h4>
+                        <div><label class="field-label-20">Documento do Titular</label><input type="text" class="text-field-11 w-input" maxlength="256" name="field-4" data-name="Field 4" id="field-4" required=""></div>
+                        <div><label class="field-label-21">Número do Cartão de Crédito <span class="text-span-2">(cartões pré-pago e de débito não são aceitos)</span></label><input type="text" class="text-field-12 w-input" maxlength="256" name="field-4" data-name="Field 4" placeholder="0000.0000.0000.0000" id="field-4" required=""></div>
+                        <div><label class="field-label-22">Nome Impresso no Cartão</label><input type="text" class="text-field-13 w-input" maxlength="256" name="field-4" data-name="Field 4" placeholder="José Maria" id="field-4" required=""></div>
+                      </div>
+                      <div class="div-block-30">
+                        <div class="div-block-31"><label class="field-label-23">Mês</label><select id="field-9" name="field-9" data-name="Field 9" required="" class="select-field-3 w-select"><option value="">Selecionar</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                        <div class="div-block-32"><label class="field-label-24">Ano</label><select id="field-6" name="field-6" data-name="Field 6" required="" class="select-field-4 w-select"><option value="">Selecionar</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                        <div class="div-block-33"><label class="field-label-25">CVV</label><input type="text" class="text-field-14 w-input" maxlength="256" name="field-7" data-name="Field 7" placeholder="000" id="field-7" required=""></div>
+                      </div>
+                      <div class="div-block-8"><input type="submit" value="Continuar" data-wait="Please wait..." class="continue_button w-button"></div>
+                      <div class="div-block-8">
+                        <h6 class="heading-3">Bandeiras Aceitas</h6>
+                        <div class="div-block-38"><img src="images/mastercard.svg" alt="" class="image_cartao"><img src="images/visa.svg" alt="" class="image_cartao"><img src="images/elo.png" alt="" class="image_elo"></div>
+                        <div>
+                          <p class="paragraph-2">Não se preocupe! Faremos uma pré-autorização de R$ 100 em seu cartão e esse valor <span class="text-span-3">não será cobrado</span> se o faturamento mínimo for atingido em 40 dias após a entrega</p>
+                          <div class="div-block-37">
+                            <div class="text-block-11"><strong>Ao clicar em Continuar, autorizo o Banco Safra a consultar meus dados no SCR* </strong></div><img src="images/exclamation.svg" alt="" class="image-3"></div>
+                        </div>
+                      </div><a href="#">Voltar</a></div>
+                  </form>
+                  <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="etapa_4_pf w-slide">
+        <div class="section-3">
+          <div class="container-4 w-container">
+            <div class="div-block-39">
+              <h3 class="heading-4">CONDIÇÕES DE RECEBIMENTO ANTECIPADO</h3>
+              <div class="div-block-60">
+                <div class="text-block-12">Receber em:</div>
+                <div class="div-block-61"></div>
+              </div>
+              <div class="w-form">
+                <form id="email-form-3" name="email-form-3" data-name="Email Form 3">
+                  <div class="div-block-41"><label class="receber w-radio"><input type="radio" data-name="Radio 5" id="radio-5" name="radio-5" value="Radio 5" required="" class="radio-button-2 w-radio-input"><span class="radio-button-label w-form-label">1 dia</span><label class="select_dia"> </label></label><label class="receber w-radio"><input type="radio" data-name="Radio 5" id="radio-5" name="radio-5" value="Radio 5" required="" class="radio-button-3 w-radio-input"><span class="radio-button-label w-form-label">15 dias</span><label class="select_dia"> </label></label><label class="receber w-radio"><input type="radio" data-name="Radio 5" value="Radio 5" name="radio-5" required="" class="radio-button-4 w-radio-input"><span class="radio-button-label w-form-label">30 dias</span><label class="select_dia"> </label></label>
+                  </div>
+                  <p class="paragraph-3">Parcelamento antecipado das transações de crédito à vista sujeito a taxa de antecipação de 4,50% e para o crédito parcelado 4,90% ao mês.</p>
+                  <h5 class="heading-6">Dados da entrega</h5>
+                  <div class="div-block-57">
+                    <div class="texto_opcoes">Selecione abaixo o melhor horário de entrega para receber a máquina no seu endereço</div><label class="texto_opcoes_2">Melhor horário de entrega</label><select id="field-8" name="field-8" class="input_style w-select"><option value="">Manhã - 08:00 às 12:00</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                  <div>
+                    <div class="div-block-13">
+                      <div class="div-block-14"><label for="Email-10" class="texto_opcoes_2">CEP</label><input type="number" class="input_style w-input" maxlength="256" name="Email-8" data-name="Email 8" placeholder="00000-000" id="Email-8" required=""></div><a href="#" class="button w-button">Cep Validado</a></div>
+                    <div class="div-block-15">
+                      <div class="div-block-19"><label class="texto_opcoes_2">Endereço</label><input type="text" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Logradouro" id="Phone-3" required=""></div>
+                      <div class="div-block-20"><label class="texto_opcoes_2">Número</label><input type="number" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="000" id="Phone-3" required=""></div>
+                    </div>
+                    <div class="div-block-16">
+                      <div class="div-block-21"><label class="texto_opcoes_2">Complemento</label><input type="number" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                      <div class="div-block-22"><label class="texto_opcoes_2">Bairro</label><input type="text" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Centro" id="Phone-3" required=""></div>
+                    </div>
+                    <div class="div-block-17">
+                      <div class="div-block-23"><label class="texto_opcoes_2">Estado</label><select id="Estado-2" name="Estado-2" data-name="Estado 2" required="" class="input_style w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                      <div class="div-block-24"><label class="texto_opcoes_2">Cidade</label><input type="text" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                    </div>
+                    <div class="text-block-13">Prazo de entrega: até 7 dias úteis através de um representante SafraPay</div>
+                    <div class="div-block-42"></div>
+                    <h5>TERMO DE ADESÃO</h5>
+                    <div class="div-block-43">
+                      <p class="termo_adesao_texto"><strong>Ao aceitar o presente termo, solicito a abertura de umaconta de pagamento pré-paga em meu nome junto ao Banco Safra S/A e o meucredenciamento ao Sistema SafraPay,</strong> na condição de Estabelecimento,aderindo expressamente às “Normas Gerais Regulamentadoras de Abertura,Movimentação e Manutenção de Conta de Pagamento Pré-Paga, Mantida por PessoasNaturais e Jurídicas junto ao Banco Safra S/A”, registradas no 4º Oficial deRegistro de Títulos e Documentos e Civil de Pessoa Jurídica de São Paulo,Capital, sob o nº 5.356.124, de 07.11.2018 (&quot; NormasGerais de Conta de Pagamento&quot;),e ao &quot;Contrato de Credenciamento eAdesão de Estabelecimentos aos Sistema SafraPay&quot;, e seus aditamentosregistrados no 10º Oficial de Registro de Títulos e Documentos de São Paulo,Capital, à margem do registro original de nº 2.126.256 (&quot; Contratode Credenciamento&quot;).</p>
+                      <p class="termo_adesao_texto">Estou ciente e concordo que o(s) equipamento(s) orarequisitado(s) será(ão) cedido(s) pelo Banco Safra para meu uso no regimede <strong>comodato</strong> (empréstimo gratuito), obrigando-me a observar asrespectivas obrigações a este respeito previstas no Contrato de Credenciamento.</p>
+                      <p class="termo_adesao_texto"><strong>Li e concordo</strong> com todas as cláusulas e condiçõesdas Normas Gerais de Conta de Pagamento e do Contrato de Credenciamento, bemcomo do Regulamentoda Campanha Taxa Zero SafraPayDigital, as quais me obrigo desde já a obedecer e respeitar.</p>
+                      <p class="termo_adesao_texto">Declaro que os dados aqui fornecidos são verdadeiros.Autorizo o Banco Safra, diretamente ou por meio de terceiros, a fazer todas asconsultas e solicitações que entender necessárias para validar a minhaidentidade e representação, utilizando-se, inclusive, de informações constantesde bancos de dados de caráter público ou privado, ou de quaisquer outrasfontes. Declaro e autorizo que o Banco Safra utilize meus dados cadastrais decontato (e-mail, telefone, WhatsAPP) para envio de informações e ofertas.</p>
+                      <p class="termo_adesao_texto"><strong>ATENÇÃO</strong></p>
+                      <p class="termo_adesao_texto">A abertura da conta de pagamento e o credenciamento aoSistema SafraPay estão condicionados à análise cadastral do proponente a serfeita pelo Banco Safra, de acordo com suas políticas de admissibilidade,podendo ser recusados, independentemente de exposição de motivos.</p>
+                      <p class="termo_adesao_texto">A habilitação para a Antecipação do Recebimento de Vendas(ARV) está condicionada à análise e aprovação do Banco Safra, e observará oslimites e políticas de crédito por este adotados. Os montantes queeventualmente não forem aprovados para Antecipação do Recebimento de Vendas(ARV) serão pagos no prazo habitual de 30 (trinta) dias corridos, sendo que, nocaso de Crédito Parcelado Estabelecimento, a transação será paga no número deparcelas em que foi realizada, com o intervalo de 30 dias corridos entre cadauma delas.</p>
+                      <p class="termo_adesao_texto">As transações na modalidade cartão de débito serão pagas noprazo de 1(um) dia útil. A antecipação do Recebimento de Vendas (ARV) dastransações na modalidade crédito (à vista e parcelado), estará sujeita àincidência da taxa de antecipação vigente. O pagamento será realizado na ContaDigital aberta junto ao Banco Safra.</p>
+                    </div><label class="w-checkbox checkbox-field"><input type="checkbox" id="Checkbox-2" name="Checkbox-2" data-name="Checkbox 2" required="" class="w-checkbox-input checkbox"><span for="Checkbox-2" class="checkbox-label w-form-label">li e concordo com os termos e condições</span></label></div>
+                  <div class="div-block-44"><input type="submit" value="Continuar" data-wait="Please wait..." class="submit-button w-button"></div><a href="#">Voltar</a></form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-40">
+              <h5 class="heading-18">Resumo do seu pedido</h5>
+              <h6 class="heading-10">Máquinas</h6>
+              <div class="pedido_maquina">
+                <div class="div-block-46"><img src="images/safrapay_sem_bobina_gprs.png" alt="" class="pedido_imagem_maquina">
+                  <p class="pedido_nome_maquina">SafraPay Sem Bobina<br>com Chip 2G</p>
+                </div>
+                <div class="div-block-47">
+                  <h6 class="pedido_frete_titulo">Frete</h6>
+                  <div class="pedido_frete_output">Grátis</div>
+                  <h6 class="pedido_titulo_conta">Conta Digital</h6>
+                  <h6 class="pedido_titulo_chip">Chip e plano de Dados</h6>
+                  <div class="pedido_plano_output">Grátis</div>
+                  <h6 class="pedido_titulo_garantia">Garantia</h6>
+                  <div class="pedido_garantia_output">3 anos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="etapa_5_pf w-slide">
+        <div>
+          <div class="container-5 w-container">
+            <div class="div-block-52">
+              <div class="div-block-48"><img src="images/round-done-button.svg" alt="" class="image-5">
+                <h2 class="heading-12">Pedido encaminhado com sucesso</h2>
+              </div>
+              <h3 class="heading-13">Obrigado por escolher a solução SafraPay do Banco Safra.</h3>
+              <div>
+                <h3 class="heading-14">Escolha o melhor plano para você!</h3>
+                <p class="paragraph-7">Aproveite e contrate agora uma conta digital com mais produtos e serviços inclusos e tenha mais opções para movimentar seu dinheiro.</p>
+                <div class="div-block-49">
+                  <div class="div_conta_digital">
+                    <h5 class="conta_digital">Conta Digital 1<br>R$ 19,90/mês</h5>
+                    <div class="div-block-50">
+                      <ul class="list_conta_digital w-list-unstyled">
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">Cartão de débito grátis</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 saque terminal 24 horas por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 transferência (TED/DOC) por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">10 transferências para Banco Safra por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 token digital</p>
+                        </li>
+                      </ul>
+                    </div><a href="#" class="conta_digital_button w-button">Quero este</a></div>
+                  <div class="div_conta_digital">
+                    <h5 class="conta_digital">Conta Digital 2<br>R$ 39,90/mês</h5>
+                    <div class="div-block-51">
+                      <ul class="list_conta_digital w-list-unstyled">
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">Cartão de débito grátis</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">3 saques terminal 24 horas por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">5 transferências (TED/DOC) por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">15 transferências para Banco Safra por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 token digital</p>
+                        </li>
+                      </ul>
+                    </div><a href="#" class="conta_digital_button w-button">Quero este</a></div>
+                  <div class="div_conta_digital">
+                    <h5 class="conta_digital">Plano Avulso<br>‍R$ 9,90/mês</h5>
+                    <ul class="list_conta_digital w-list-unstyled">
+                      <li>
+                        <p class="paragraph-6">Demais serviços serão cobrados por uso avulso conforme a <span class="text-span-4">tabela vigente</span> no site.</p>
+                        <p class="paragraph-6">Caso não tenha interesse nos outros pacotes você terá uma conta digital, que vem com o cartão de débito e o token digital, e todos os demais serviços serão cobrados pelas tarifas avulsas.</p>
+                      </li>
+                    </ul><a href="#" class="conta_digital_button w-button">Quero este</a></div>
+                </div>
+              </div>
+              <div>
+                <h4 class="heading-15">Após a análise você receberá por e-mail as seguintes informações:</h4>
+                <ul class="list-3">
+                  <li>
+                    <div class="text-block-18">Resumo da Contratação;</div>
+                  </li>
+                  <li>
+                    <div class="text-block-17">Credenciais para acesso a sua conta Safra, e ao SafraEmpresas.</div>
+                  </li>
+                </ul>
+                <p class="paragraph-9">O SafraEmpresas é o seu acesso eletrônico a todos os produtos do Safra. Uma ferramenta moderna e flexível. Você pode acompanhar as vendas da SafraPay, utilizar o PagSafra para pagar seus fornecedores e transferir recursos; tudo integrado de forma fácil e ágil.</p>
+                <p class="paragraph-8">Por favor, fique atento a sua caixa de spam, o e-mail pode ser direcionado. O telefone e o e-mail informados serão usados para contato referente à entrega da máquina.</p>
+              </div>
+              <div class="div-block-54">
+                <p class="paragraph-10">Realize o <strong>download do aplicativo</strong> e faça o login com o Shortname e Username que você receberá por e-mail.</p>
+                <p class="paragraph-11"><strong class="bold-text">Faça agora mesmo o download</strong></p>
+                <div class="div-block-53"><a href="#" class="w-inline-block"><img src="images/en_badge_web_generic.png" srcset="images/en_badge_web_generic-p-500.png 500w, images/en_badge_web_generic.png 646w" sizes="(max-width: 479px) 36vw, 150px" alt="" class="image-7"></a><a href="#" class="w-inline-block"><img src="images/apple-app-store-download.png" srcset="images/apple-app-store-download-p-500.png 500w, images/apple-app-store-download.png 646w" sizes="(max-width: 479px) 36vw, 150px" alt="" class="image-8"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="etapa_2_pj w-slide">
+        <section id="section_2" class="section_2">
+          <div class="container w-container">
+            <div class="div_container">
+              <h1 class="titulo_maquina_gratis">Peça sua MÁQUINA GRÁTIS</h1>
+              <p class="texto_maquina_gratis">E aproveite para ter TAXA ZERO¹ no crédito à vista e parcelado</p>
+              <div class="lista_informacoes">
+                <ul class="list">
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Cartão de débito Grátis</div>
+                  </li>
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Aplicativo para acompanhar vendas</div>
+                  </li>
+                  <li class="list_item_tick"><img src="images/tick.svg" alt="" class="tick_image">
+                    <div class="list_tick_text">Receba a máquina em até 7 dias</div>
+                  </li>
+                </ul>
+                <div class="div-block-5"><img src="images/machines_all.png" alt="" class="image">
+                  <p class="paragraph">A escolha das máquinas será feita na terceira etapa</p>
+                </div>
+              </div>
+              <div class="div_container_down">
+                <div data-duration-in="300" data-duration-out="100" class="w-tabs">
+                  <div class="w-tab-menu">
+                    <a data-w-tab="Tab 2" class="pf_pj_tab w-inline-block w-tab-link w--current">
+                      <div>PARA PESSOA JURÍDICA</div>
+                    </a>
+                  </div>
+                  <div class="w-tab-content">
+                    <div data-w-tab="Tab 2" class="w-tab-pane w--tab-active">
+                      <div class="w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form">
+                          <div>
+                            <h4 class="endereo_residencial_pf">Endereço da empresa</h4>
+                            <div class="div-block-13">
+                              <div class="div-block-14"><label for="Email-10" class="label_input_etapa_2_pj">CEP</label><input type="number" class="pj_input_etapa_2 w-input" maxlength="256" name="Email-8" data-name="Email 8" placeholder="00000-000" id="Email-8" required=""></div><a href="#" class="button w-button">Validar CEP</a></div>
+                            <div class="div-block-15">
+                              <div class="div-block-19"><label class="label_input_etapa_2_pj">Endereço</label><input type="text" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Logradouro" id="Phone-3" required=""></div>
+                              <div class="div-block-20"><label class="label_input_etapa_2_pj">Número</label><input type="number" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="000" id="Phone-3" required=""></div>
+                            </div>
+                            <div class="div-block-16">
+                              <div class="div-block-21"><label class="label_input_etapa_2_pj">Complemento</label><input type="number" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                              <div class="div-block-22"><label class="label_input_etapa_2_pj">Bairro</label><input type="text" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Centro" id="Phone-3" required=""></div>
+                            </div>
+                            <div class="div-block-17">
+                              <div class="div-block-23"><label class="label_input_etapa_2_pj">Estado</label><select id="Estado-3" name="Estado-3" data-name="Estado 3" required="" class="select-field w-select"><option value="">Selecionar</option><option value="acre">AC</option><option value="alagoas">AL</option><option value="amapa">AP</option><option value="amazonas">AM</option><option value="bahia">BA</option><option value="ceara">CE</option><option value="distrito_federal">DF</option><option value="espirito_santo">ES</option><option value="goias">GO</option><option value="maranhao">MA</option><option value="mato_grosso">MT</option><option value="mato_grosso_sul">MS</option><option value="minas_gerais">MG</option><option value="para">PA</option><option value="paraiba">PB</option><option value="parana">PR</option><option value="pernambuco">PE</option><option value="piaui">PI</option><option value="rio_de_janeiro">RJ</option><option value="rio_grande_norte">RN</option><option value="rio_grande_sul">RS</option><option value="rondonia">RO</option><option value="roraima">RR</option><option value="santa_catarina">SC</option><option value="sao_paulo">SP</option><option value="sergipe">SE</option><option value="tocantins">TO</option></select></div>
+                              <div class="div-block-24"><label class="label_input_etapa_2_pj">Cidade</label><input type="text" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                            </div>
+                          </div>
+                          <div>
+                            <h4 class="endereo_residencial_pf">Dados do sócio</h4><label for="CPF-4" class="label_input_etapa_2_pj">CPF</label><input type="number" class="pj_input_etapa_2 w-input" maxlength="256" name="CPF-4" data-name="CPF 4" placeholder="___.___.___-__" id="CPF-4" required=""><label for="Nome_completo" class="label_input_etapa_2_pj">Nome Completo</label><input type="text" class="pj_input_etapa_2 w-input" maxlength="256" name="Nome_completo" data-name="Nome Completo" id="Nome_completo" required=""><label class="label_input_etapa_2_pj">Data de nascimento (dia/mês/ano)</label><input type="number" class="pj_input_etapa_2 w-input" maxlength="256" name="field-9" data-name="Field 9" id="field-9" required=""><label class="label_input_etapa_2_pj">Nome completo da mãe</label><input type="text" class="pj_input_etapa_2 w-input" maxlength="256" name="field-9" data-name="Field 9" id="field-9" required=""></div>
+                          <div>
+                            <h4 class="endereo_residencial_pf">Telefones Adicionais</h4>
+                            <div class="div-block-13">
+                              <div class="div-block-25">
+                                <div class="div-block-26"><label class="label_input_etapa_2_pj">Telefone Adicional 1</label><input type="tel" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="(00) 00000-0000" id="Phone-3"></div>
+                                <div class="div-block-27"><label class="label_input_etapa_2_pj">Telefone Adicional 2</label><input type="tel" class="pj_input_etapa_2 w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="(00) 00000-0000" id="Phone-3"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <h4 class="endereo_residencial_pf">A sua empresa possui outros sócios?</h4>
+                            <div class="div-block-55"><label class="w-radio"><input type="radio" data-name="Radio 6" id="radio-7" name="radio-6" value="Radio 7" required="" class="w-radio-input"><span class="w-form-label">Sim</span></label><label class="radio-button-field-4 w-radio"><input type="radio" data-name="Radio 6" id="radio-6" name="radio-6" value="Radio 6" required="" class="w-radio-input"><span class="w-form-label">Não</span></label></div>
+                          </div>
+                          <div class="div-block-8"><input type="submit" value="Continuar" data-wait="Please wait..." class="continue_button w-button"></div>
+                        </form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div><a href="#tab_1">Voltar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="etapa_3_pj w-slide">
+        <section id="section_2">
+          <div class="container w-container">
+            <div class="div_top">
+              <h4 class="heading-16">MÁQUINAS DISPONÍVEIS</h4>
+              <div>
+                <div class="w-form">
+                  <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
+                    <div class="div-block-29">
+                      <div class="maquininha_div"><img src="images/safrapay_bobina.png" alt="" class="maquininha_image com_bobina"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 10" id="radio-10" name="radio" value="Radio" required="" class="radio-button w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>com bobina<br>3G + Wi-Fi</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 7.000,00</strong><br></p>
+                      </div>
+                      <div class="maquininha_div"><img src="images/safrapay_sem_bobina.png" alt="" class="maquininha_image sem_bobina_image"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 11" id="radio-11" name="radio" value="Radio" required="" class="w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>sem bobina<br>3G + Wi-Fi</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 5.000,00</strong></p>
+                      </div>
+                      <div class="maquininha_div"><img src="images/safrapay_sem_bobina_gprs.png" alt="" class="maquininha_image"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 12" id="radio-12" name="radio" value="Radio" required="" class="w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>sem bobina<br>GPRS</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 3.000,00</strong></p>
+                      </div>
+                      <div class="maquininha_div"><img src="images/safrapay_celular.png" alt="" class="maquininha_image image_com_celular"><label class="maquininha_radio w-radio"><input type="radio" data-name="Radio 13" id="radio-13" name="radio" value="Radio" required="" class="w-radio-input"><span class="select_maquina w-form-label"> </span></label>
+                        <h5 class="maquininha_heading">SafraPay móvel<br>sem bobina<br>via Bluetooth</h5>
+                        <p class="maquininha_paragraph">Faturamento <br>mínimo mensal<br><strong>R$ 1.500,00</strong></p>
+                      </div>
+                    </div>
+                    <div class="div-block-35">
+                      <h4 class="heading-2">Aproveite taxa de <span class="text-span">0%</span> no crédito à vista e parcelado</h4>
+                      <div class="text-block-10">nos primeiros R$ 50 mil em vendas totais por mês</div>
+                    </div>
+                    <div class="div-block-34">
+                      <div>
+                        <h4 class="heading-17">Cartão de Crédito</h4>
+                        <div><label class="field-label-20">Documento do Titular</label><input type="text" class="text-field-11 w-input" maxlength="256" name="field-4" data-name="Field 4" id="field-4" required=""></div>
+                        <div><label class="field-label-21">Número do Cartão de Crédito <span class="text-span-2">(cartões pré-pago e de débito não são aceitos)</span></label><input type="text" class="text-field-12 w-input" maxlength="256" name="field-4" data-name="Field 4" placeholder="0000.0000.0000.0000" id="field-4" required=""></div>
+                        <div><label class="field-label-22">Nome Impresso no Cartão</label><input type="text" class="text-field-13 w-input" maxlength="256" name="field-4" data-name="Field 4" placeholder="José Maria" id="field-4" required=""></div>
+                      </div>
+                      <div class="div-block-30">
+                        <div class="div-block-31"><label class="field-label-23">Mês</label><select id="field-9" name="field-9" data-name="Field 9" required="" class="select-field-3 w-select"><option value="">Selecionar</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                        <div class="div-block-32"><label class="field-label-24">Ano</label><select id="field-6" name="field-6" data-name="Field 6" required="" class="select-field-4 w-select"><option value="">Selecionar</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                        <div class="div-block-33"><label class="field-label-25">CVV</label><input type="text" class="text-field-14 w-input" maxlength="256" name="field-7" data-name="Field 7" placeholder="000" id="field-7" required=""></div>
+                      </div>
+                      <div class="div-block-8"><input type="submit" value="Continuar" data-wait="Please wait..." class="continue_button w-button"></div>
+                      <div class="div-block-8">
+                        <h6 class="heading-3">Bandeiras Aceitas</h6>
+                        <div class="div-block-38"><img src="images/mastercard.svg" alt="" class="image_cartao"><img src="images/visa.svg" alt="" class="image_cartao"><img src="images/elo.png" alt="" class="image_elo"></div>
+                        <div>
+                          <p class="paragraph-2">Não se preocupe! Faremos uma pré-autorização de R$ 100 em seu cartão e esse valor <span class="text-span-3">não será cobrado</span> se o faturamento mínimo for atingido em 40 dias após a entrega</p>
+                          <div class="div-block-37">
+                            <div class="text-block-11"><strong>Ao clicar em Continuar, autorizo o Banco Safra a consultar meus dados no SCR* </strong></div><img src="images/exclamation.svg" alt="" class="image-3"></div>
+                        </div>
+                      </div><a href="#">Voltar</a></div>
+                  </form>
+                  <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="etapa_4_pj w-slide">
+        <div class="section-3">
+          <div class="container-4 w-container">
+            <div class="div-block-39">
+              <h3 class="heading-4">CONDIÇÕES DE RECEBIMENTO ANTECIPADO</h3>
+              <div class="div-block-60">
+                <div class="text-block-12">Receber em:</div>
+                <div class="div-block-61"></div>
+              </div>
+              <div class="w-form">
+                <form id="email-form-3" name="email-form-3" data-name="Email Form 3">
+                  <div class="div-block-41"><label class="receber w-radio"><input type="radio" data-name="Radio 5" id="radio-5" name="radio-5" value="Radio 5" required="" class="radio-button-2 w-radio-input"><span class="radio-button-label w-form-label">1 dia</span><label class="select_dia"> </label></label><label class="receber w-radio"><input type="radio" data-name="Radio 5" id="radio-5" name="radio-5" value="Radio 5" required="" class="radio-button-3 w-radio-input"><span class="radio-button-label w-form-label">15 dias</span><label class="select_dia"> </label></label><label class="receber w-radio"><input type="radio" data-name="Radio 5" value="Radio 5" name="radio-5" required="" class="radio-button-4 w-radio-input"><span class="radio-button-label w-form-label">30 dias</span><label class="select_dia"> </label></label>
+                  </div>
+                  <p class="paragraph-3">Parcelamento antecipado das transações de crédito à vista sujeito a taxa de antecipação de 4,50% e para o crédito parcelado 4,90% ao mês.</p>
+                  <h5 class="heading-6">Dados da entrega</h5>
+                  <div class="div-block-57">
+                    <div class="texto_opcoes">Selecione abaixo o melhor horário de entrega para receber a máquina no seu endereço</div><label class="texto_opcoes_2">Melhor horário de entrega</label><select id="field-8" name="field-8" class="input_style w-select"><option value="">Manhã - 08:00 às 12:00</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                  <div>
+                    <div class="div-block-13">
+                      <div class="div-block-14"><label for="Email-10" class="texto_opcoes_2">CEP</label><input type="number" class="input_style w-input" maxlength="256" name="Email-8" data-name="Email 8" placeholder="00000-000" id="Email-8" required=""></div><a href="#" class="button w-button">Cep Validado</a></div>
+                    <div class="div-block-15">
+                      <div class="div-block-19"><label class="texto_opcoes_2">Endereço</label><input type="text" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Logradouro" id="Phone-3" required=""></div>
+                      <div class="div-block-20"><label class="texto_opcoes_2">Número</label><input type="number" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="000" id="Phone-3" required=""></div>
+                    </div>
+                    <div class="div-block-16">
+                      <div class="div-block-21"><label class="texto_opcoes_2">Complemento</label><input type="number" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                      <div class="div-block-22"><label class="texto_opcoes_2">Bairro</label><input type="text" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" placeholder="Centro" id="Phone-3" required=""></div>
+                    </div>
+                    <div class="div-block-17">
+                      <div class="div-block-23"><label class="texto_opcoes_2">Estado</label><select id="Estado-2" name="Estado-2" data-name="Estado 2" required="" class="input_style w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                      <div class="div-block-24"><label class="texto_opcoes_2">Cidade</label><input type="text" class="input_style w-input" maxlength="256" name="Phone-3" data-name="Phone 3" id="Phone-3" required=""></div>
+                    </div>
+                    <div class="text-block-13">Prazo de entrega: até 7 dias úteis através de um representante SafraPay</div>
+                    <div class="div-block-42"></div>
+                    <h5>TERMO DE ADESÃO</h5>
+                    <div class="div-block-43">
+                      <p class="termo_adesao_texto"><strong>Ao aceitar o presente termo, solicito a abertura de umaconta de pagamento pré-paga em meu nome junto ao Banco Safra S/A e o meucredenciamento ao Sistema SafraPay,</strong> na condição de Estabelecimento,aderindo expressamente às “Normas Gerais Regulamentadoras de Abertura,Movimentação e Manutenção de Conta de Pagamento Pré-Paga, Mantida por PessoasNaturais e Jurídicas junto ao Banco Safra S/A”, registradas no 4º Oficial deRegistro de Títulos e Documentos e Civil de Pessoa Jurídica de São Paulo,Capital, sob o nº 5.356.124, de 07.11.2018 (&quot; NormasGerais de Conta de Pagamento&quot;),e ao &quot;Contrato de Credenciamento eAdesão de Estabelecimentos aos Sistema SafraPay&quot;, e seus aditamentosregistrados no 10º Oficial de Registro de Títulos e Documentos de São Paulo,Capital, à margem do registro original de nº 2.126.256 (&quot; Contratode Credenciamento&quot;).</p>
+                      <p class="termo_adesao_texto">Estou ciente e concordo que o(s) equipamento(s) orarequisitado(s) será(ão) cedido(s) pelo Banco Safra para meu uso no regimede <strong>comodato</strong> (empréstimo gratuito), obrigando-me a observar asrespectivas obrigações a este respeito previstas no Contrato de Credenciamento.</p>
+                      <p class="termo_adesao_texto"><strong>Li e concordo</strong> com todas as cláusulas e condiçõesdas Normas Gerais de Conta de Pagamento e do Contrato de Credenciamento, bemcomo do Regulamentoda Campanha Taxa Zero SafraPayDigital, as quais me obrigo desde já a obedecer e respeitar.</p>
+                      <p class="termo_adesao_texto">Declaro que os dados aqui fornecidos são verdadeiros.Autorizo o Banco Safra, diretamente ou por meio de terceiros, a fazer todas asconsultas e solicitações que entender necessárias para validar a minhaidentidade e representação, utilizando-se, inclusive, de informações constantesde bancos de dados de caráter público ou privado, ou de quaisquer outrasfontes. Declaro e autorizo que o Banco Safra utilize meus dados cadastrais decontato (e-mail, telefone, WhatsAPP) para envio de informações e ofertas.</p>
+                      <p class="termo_adesao_texto"><strong>ATENÇÃO</strong></p>
+                      <p class="termo_adesao_texto">A abertura da conta de pagamento e o credenciamento aoSistema SafraPay estão condicionados à análise cadastral do proponente a serfeita pelo Banco Safra, de acordo com suas políticas de admissibilidade,podendo ser recusados, independentemente de exposição de motivos.</p>
+                      <p class="termo_adesao_texto">A habilitação para a Antecipação do Recebimento de Vendas(ARV) está condicionada à análise e aprovação do Banco Safra, e observará oslimites e políticas de crédito por este adotados. Os montantes queeventualmente não forem aprovados para Antecipação do Recebimento de Vendas(ARV) serão pagos no prazo habitual de 30 (trinta) dias corridos, sendo que, nocaso de Crédito Parcelado Estabelecimento, a transação será paga no número deparcelas em que foi realizada, com o intervalo de 30 dias corridos entre cadauma delas.</p>
+                      <p class="termo_adesao_texto">As transações na modalidade cartão de débito serão pagas noprazo de 1(um) dia útil. A antecipação do Recebimento de Vendas (ARV) dastransações na modalidade crédito (à vista e parcelado), estará sujeita àincidência da taxa de antecipação vigente. O pagamento será realizado na ContaDigital aberta junto ao Banco Safra.</p>
+                    </div><label class="w-checkbox checkbox-field"><input type="checkbox" id="Checkbox-2" name="Checkbox-2" data-name="Checkbox 2" required="" class="w-checkbox-input checkbox"><span for="Checkbox-3" class="checkbox-label w-form-label">li e concordo com os termos e condições</span></label></div>
+                  <div class="div-block-44"><input type="submit" value="Continuar" data-wait="Please wait..." class="submit-button w-button"></div><a href="#">Voltar</a></form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-40">
+              <h5 class="heading-18">Resumo do seu pedido</h5>
+              <h6 class="heading-10">Máquinas</h6>
+              <div class="pedido_maquina">
+                <div class="div-block-46"><img src="images/safrapay_sem_bobina_gprs.png" alt="" class="pedido_imagem_maquina">
+                  <p class="pedido_nome_maquina">SafraPay Sem Bobina<br>com Chip 2G</p>
+                </div>
+                <div class="div-block-47">
+                  <h6 class="pedido_frete_titulo">Frete</h6>
+                  <div class="pedido_frete_output">Grátis</div>
+                  <h6 class="pedido_titulo_conta">Conta Digital</h6>
+                  <h6 class="pedido_titulo_chip">Chip e plano de Dados</h6>
+                  <div class="pedido_plano_output">Grátis</div>
+                  <h6 class="pedido_titulo_garantia">Garantia</h6>
+                  <div class="pedido_garantia_output">3 anos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="etapa_5_pj w-slide">
+        <div>
+          <div class="container-5 w-container">
+            <div class="div-block-52">
+              <div class="div-block-48"><img src="images/round-done-button.svg" alt="" class="image-5">
+                <h2 class="heading-12">Pedido encaminhado com sucesso</h2>
+              </div>
+              <h3 class="heading-13">Obrigado por escolher a solução SafraPay do Banco Safra.</h3>
+              <div>
+                <h3 class="heading-14">Escolha o melhor plano para você!</h3>
+                <p class="paragraph-7">Aproveite e contrate agora uma conta digital com mais produtos e serviços inclusos e tenha mais opções para movimentar seu dinheiro.</p>
+                <div class="div-block-49">
+                  <div class="div_conta_digital">
+                    <h5 class="conta_digital">Conta Digital 1<br>R$ 19,90/mês</h5>
+                    <div class="div-block-50">
+                      <ul class="list_conta_digital w-list-unstyled">
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">Cartão de débito grátis</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 saque terminal 24 horas por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 transferência (TED/DOC) por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">10 transferências para Banco Safra por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 token digital</p>
+                        </li>
+                      </ul>
+                    </div><a href="#" class="conta_digital_button w-button">Quero este</a></div>
+                  <div class="div_conta_digital">
+                    <h5 class="conta_digital">Conta Digital 2<br>R$ 39,90/mês</h5>
+                    <div class="div-block-51">
+                      <ul class="list_conta_digital w-list-unstyled">
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">Cartão de débito grátis</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">3 saques terminal 24 horas por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">5 transferências (TED/DOC) por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">15 transferências para Banco Safra por mês</p>
+                        </li>
+                        <li class="list-item"><img src="images/tick_blue.svg" alt="" class="image-6">
+                          <p class="paragraph-6">1 token digital</p>
+                        </li>
+                      </ul>
+                    </div><a href="#" class="conta_digital_button w-button">Quero este</a></div>
+                  <div class="div_conta_digital">
+                    <h5 class="conta_digital">Plano Avulso<br>‍R$ 9,90/mês</h5>
+                    <ul class="list_conta_digital w-list-unstyled">
+                      <li>
+                        <p class="paragraph-6">Demais serviços serão cobrados por uso avulso conforme a <span class="text-span-4">tabela vigente</span> no site.</p>
+                        <p class="paragraph-6">Caso não tenha interesse nos outros pacotes você terá uma conta digital, que vem com o cartão de débito e o token digital, e todos os demais serviços serão cobrados pelas tarifas avulsas.</p>
+                      </li>
+                    </ul><a href="#" class="conta_digital_button w-button">Quero este</a></div>
+                </div>
+              </div>
+              <div>
+                <h4 class="heading-15">Após a análise você receberá por e-mail as seguintes informações:</h4>
+                <ul class="list-3">
+                  <li>
+                    <div class="text-block-18">Resumo da Contratação;</div>
+                  </li>
+                  <li>
+                    <div class="text-block-17">Credenciais para acesso a sua conta Safra, e ao SafraEmpresas.</div>
+                  </li>
+                </ul>
+                <p class="paragraph-9">O SafraEmpresas é o seu acesso eletrônico a todos os produtos do Safra. Uma ferramenta moderna e flexível. Você pode acompanhar as vendas da SafraPay, utilizar o PagSafra para pagar seus fornecedores e transferir recursos; tudo integrado de forma fácil e ágil.</p>
+                <p class="paragraph-8">Por favor, fique atento a sua caixa de spam, o e-mail pode ser direcionado. O telefone e o e-mail informados serão usados para contato referente à entrega da máquina.</p>
+              </div>
+              <div class="div-block-54">
+                <p class="paragraph-10">Realize o <strong>download do aplicativo</strong> e faça o login com o Shortname e Username que você receberá por e-mail.</p>
+                <p class="paragraph-11"><strong class="bold-text">Faça agora mesmo o download</strong></p>
+                <div class="div-block-53"><a href="#" class="w-inline-block"><img src="images/en_badge_web_generic.png" srcset="images/en_badge_web_generic-p-500.png 500w, images/en_badge_web_generic.png 646w" sizes="(max-width: 479px) 36vw, 150px" alt="" class="image-7"></a><a href="#" class="w-inline-block"><img src="images/apple-app-store-download.png" srcset="images/apple-app-store-download-p-500.png 500w, images/apple-app-store-download.png 646w" sizes="(max-width: 479px) 36vw, 150px" alt="" class="image-8"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="left-arrow-2 w-slider-arrow-left"></div>
+    <div class="right-arrow-2 w-slider-arrow-right"></div>
+    <div class="slide-nav-2 w-slider-nav w-slider-nav-invert w-round w-num"></div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
