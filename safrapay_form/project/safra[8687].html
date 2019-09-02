@@ -1,0 +1,580 @@
+
+<!-- saved from url=(0151)file:///C:/Users/Fuentes/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/7928/Attachments/safra[8687].html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+	 <!------------------------------------->
+	 <!-- VOCE PRECISA DECLARAR OS SCRIPT -->
+	 <!------------------------------------->
+	 <script src="./safra[8687]_files/jquery-3.4.1.min.js.download" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="./safra[8687]_files/site-demos.css">
+
+	 <script src="./safra[8687]_files/jquery.mask.js.download"></script>
+	 <script src="./safra[8687]_files/jquery.validate.min.js.download"></script>
+	 <script src="./safra[8687]_files/additional-methods.min.js.download"></script>
+	 <form name="formSafra" id="formSafra" novalidate="novalidate">
+		 <input type="hidden" id="_id">
+		 <input type="hidden" id="_passo" value="1">
+		 <input type="hidden" id="_tipo" value="PF">
+		 <input type="button" value="PF" onclick="setTipo(&#39;PF&#39;);"><input type="button" value="PJ" onclick="setTipo(&#39;PJ&#39;);">
+		 <div class="passo1" style="">
+		 <div class="exibirPJ" style="display: none;">CNPJ<input type="text" name="cnpj" class="cnpj" maxlength="18"><br></div>
+		<div class="exibirPF" style=""><label for="cpf">CPF<input type="text" id="cpf" name="cpf" class="cpf" maxlength="14"><br>
+		<label for="nome">Nome<input type="text" name="nome" id="nome" class="nome"><br></label></label></div>
+		<label for="email">E-mail<input type="text" name="email" id="email"><br>
+		Conf E-mail<input type="text" name="emailConf" id="emailConf"><br>
+		Telefone<input type="text" id="telefone" name="telefone" ame="telefone" class="telefone_ddd" maxlength="14"><br>
+		Conf Telefone<input type="text" id="telefoneConf" name="telefoneConf" class="telefone_ddd" maxlength="14"><br>
+		 </label></div>
+		 <div class="passo2" style="display: none;">
+		 <div class="exibirPF" style=""><div>Nome: <div class="nomeExibir"></div></div><br>
+		 <div>CPF: <div class="cpfExibir"></div> </div><br></div>
+		 <div class="exibirPJ" style="display: none;"><div>CNPJ: <div class="cnpjExibir"></div> </div><br></div>
+		 <div>E-mail:<div class="emailExibir"></div> </div><br>
+		 <div>Telefone: <div class="telefoneExibir"></div></div><br>
+	 
+	 	 <div class="exibirPF" style="">Data de Nascimento<input type="text" id="dataNascPF" name="dataNascPF" class="data"><br></div>
+		 <div class="exibirPF" style="">Nome completo da mae <input type="text" id="nomeMaePF" name="nomeMaePF"><br></div>
+		 CEP<input type="text" id="cep" name="cep" class="cep" maxlength="9"><input type="button" value="CEP VALIDAR"><br>
+		 ENDERECO<input type="text" name="endereco" id="endereco"><br>
+		 NUMERO<input type="text" name="numero" id="numero"><br>
+		 COMPLEMENTO<input type="text" id="complemento" name="complemento" class="complemento"><br>
+		 BAIRRO<input type="text" name="bairro" id="bairro"><br>
+		  CIDADE<input type="text" name="cidade" id="cidade"><br>
+		 
+		 UF<select id="uf" name="uf">
+	<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+</select><br>
+		 <div class="exibirPJ" style="display: none;">CPF<input type="text" name="cpfJ" class="cpf" maxlength="14"><br></div>
+		 <div class="exibirPJ" style="display: none;">Nome<input type="text" name="nomeJ"><br></div>
+		 <div class="exibirPJ" style="display: none;">Data<input type="text" name="dataJ"><br></div>
+		 <div class="exibirPJ" style="display: none;">Nome da Mae<input type="text" name="nomeMaeJ"><br></div>
+		 
+		 TELEFONE 1<input type="text" id="telefone2" name="telefone2" class="telefone_ddd" maxlength="14"><br>
+		 TELEFONE 2<input type="text" id="telefone3" name="telefone3" class="telefone_ddd" maxlength="14"><br>
+		  POSSUI SOCIO SIM<input type="radio" id="possuiSocio" name="possuiSocio" value="S">NAO<input type="radio" id="possuiSocio" name="possuiSocio" checked="checked" value="N"><br>
+		 
+		 <div class="exibirPF" style="">
+		 Selecione a atividade principal<select name="atividade">
+		 <option value="1">Advogados - Serviços legais</option>
+		 <option value="2">Artes e Antiguidades</option>
+		 <option value="3">Artesanato</option>
+		 <option value="4">Ateliê – Alfaiataria e costura</option>
+		 <option value="5">Banca de Jornal - Livros e revistas</option>
+		 <option value="6">Chaveiro</option>
+		 <option value="7">Consertos Eletrônicos</option>
+		 <option value="8">Consultoria - Auditoria - Serviços Administrativos</option>
+		 <option value="9">Dentista</option>
+		 <option value="10">Despachante - Contador</option>
+		 <option value="11">Docerias - Serviços de Bufet - Alimentos</option>
+		 <option value="12">Empreiteiro Autônomo</option>
+		 <option value="13">Engenheiro – Arquiteto</option>
+		 <option value="14">Estudio fotográfico</option>
+		 <option value="15">Hortifrutigranjeiro - Feira Livre - Sacolão</option>
+		 <option value="16">Jardineiro – Paisagista – Floricultura</option>
+		 <option value="17">Marceneiro - Serralheiro - Vidraceiro - Mecânico</option>
+		 <option value="18">Médicos em geral</option>
+		 <option value="19">Outros - Outra</option>
+		 <option value="20">Personal Trainer - Estúdios de Dança e Música</option>
+		 <option value="21">Pousada</option>
+		 <option value="22">Professores - Serviços Educacionais</option>
+		 <option value="23">Profissionais da Saúde</option>
+		 <option value="24">Quiosque de Praia</option>
+		 <option value="25">Roupas e Acessórios</option>
+		 <option value="26">Salão de Beleza, Estética e SPA</option>
+		 <option value="27">Sapataria - venda, conserto e reforma</option>
+		 <option value="28">Serviços Gerais</option>
+		 <option value="29">Serviços Limpeza - Lava Rápido</option>
+		 <option value="30">Transporte - Taxi, Bugueiro, Escolar, Guincho</option>
+		 <option value="31">Vendas a Domicílio</option>
+		 <option value="32">Vendedor Ambulante</option>
+		 
+		 </select><br></div>
+		 </div>
+		 <div class="passo3" style="display: none;">
+		  MÁQUINAS DISPONÍVEIS
+			 7<input type="radio" id="maquina" name="maquina" value="7">
+			 5<input type="radio" id="maquina" name="maquina" value="5">
+			 3<input type="radio" id="maquina" name="maquina" value="3" checked="checked">
+			 1<input type="radio" id="maquina" name="maquina" value="1">
+		 </div>
+		  <div class="passo4" style="display: none;">
+			  Receber em:1<input type="radio" id="receberem" name="receberem" value="1">
+			 15<input type="radio" id="receberem" name="receberem" value="15">
+			  30<input type="radio" id="receberem" name="receberem" value="30"><br><br><br>
+	 
+		 Melhor horário de entrega
+			<select id="horarioEntrega" name="horarioEntrega">
+				<option value=""></option>
+			 <option value="1">Manhã - 08:00 às 12:00</option>
+		 </select>
+	
+	 CEP<input type="text" name="cepEntrega" id="cepEntrega" class="cep" maxlength="9"><input type="button" value="CEP VALIDAR"><br>
+		 ENDERECO<input type="text" id="enderecoEntrega" name="enderecoEntrega"><br>
+		 NUMERO<input type="text" id="numeroEntrega" name="numeroEntrega"><br>
+		 COMPLEMENTO<input type="text" id="complementoEntrega" name="complementoEntrega"><br>
+		 BAIRRO<input type="text" id="bairroEntrega" name="bairroEntrega"><br>
+		  CIDADE<input type="text" id="cidadeEntrega" name="cidadeEntrega"><br>
+		 
+		 UF<select id="ufEntrega" name="ufEntrega">
+	<option value=""></option>
+	<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+</select><br>
+			</div>
+		 <div class="passo5" style="display: none;">
+			Layout Obrigado
+		 </div>
+		 <input type="button" value="VOLTAR" onclick="setAnteriorPasso();"><input type="button" value="PROXIMO" onclick="setProximoPasso();">
+	 <script>
+		 $(document).ready(function(){
+			
+			  $('.cep').mask('00000-000');
+			  $('.telefone_ddd').mask('(00) 0000-0000');
+			  $('.cpf').mask('000.000.000-00', {reverse: true});
+			  $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+		 });
+		 function salvarDados()
+		 {
+			 console.log($('#cpf').val());
+		 	 console.log($('#cnpj').val());
+		 	 console.log($('#email').val());
+		 console.log($('#nome').val());
+		 		 console.log($('#telefone').val());
+ 		 console.log($('#nomeMaeJ').val());
+	 console.log($('#cpfJ').val());
+				  	 	 console.log($('#nomeJ').val()); 
+console.log($('#cep').val()); 
+console.log($('#endereco').val()); 
+				  	  console.log($('#numero').val());  
+				  console.log($('#complemento').val());   
+		   console.log($('#bairro').val());  
+		   console.log($('#cidade').val());  
+		 console.log($('#uf').val());  
+				 console.log($('#telefone2').val());  				      
+				   console.log($('#telefone3').val());  
+				     console.log($('#dataNascPF').val());  
+				   console.log($('#nomeMaePF').val());  
+				    console.log($('#telefoneConf').val());  
+	
+		  console.log($('#emailConf').val());  
+		  console.log($('#receberem').val());  
+		  console.log($('#horarioEntrega').val());  
+				   
+				  				  console.log($('#cepEntrega').val());  
+		 		  console.log($('#enderecoEntrega').val());  
+		 		  console.log($('#numeroEntrega').val());  
+		 		  console.log($('#cidadeEntrega').val());  
+		 		  console.log($('#ufEntrega').val());  
+		 		  console.log($('#complementoEntrega').val());  
+		 }
+		 function setTipo(tipo)
+		 {
+			  $('#_tipo').val(tipo);
+			  exibirPasso();
+			 
+		 }
+		 function setProximoPasso()
+		 {
+			 var passo = $('#_passo').val();
+			 if ($("#formSafra").valid())
+			 {
+				 if (passo=="") 
+				 {
+					 passo="1";
+					 $('#_passo').val(1);
+				 }
+				 passo =(parseInt(passo)+1).toString();
+				  if(parseInt(passo)>=5) passo="5";
+				  $('#_passo').val(passo);
+
+				 exibirPasso();
+				 salvarDados();
+			}
+		 }
+		 function setAnteriorPasso()
+		 {
+			var passo = $('#_passo').val();
+			 if (passo=="") 
+			 {
+				 passo="1";
+				 $('#_passo').val(1);
+			 }
+			 passo =(parseInt(passo)-1).toString();
+			  if(parseInt(passo)<=1) passo="1";
+			 $('#_passo').val(passo);
+			 exibirPasso();
+			 salvarDados();
+		 }
+		 function exibirPasso()
+		 {
+			 
+			 var tipo = $('#_tipo').val();
+			 var passo = $('#_passo').val();
+			 if (passo=="") 
+			 {
+				 passo="1";
+				 $('#_passo').val(1);
+			 }
+			 
+			 $('.exibirPJ').hide();
+			 $('.exibirPF').hide();
+			 $('.passo1').hide();
+			 $('.passo2').hide();
+			 $('.passo3').hide();
+			 $('.passo4').hide();
+			 	 $('.passo5').hide();
+			 switch(passo)
+			 {
+				 case "1":
+					 $('.passo1').show();
+					 break;
+				 case "2":
+					 $('.passo2').show();
+					 break;
+     			 case "3":
+					 $('.passo3').show();
+					 break;
+		     	 case "4":
+					 $('.passo4').show();
+					 break;		
+				 case "5":
+					 $('.passo5').show();
+					 break;		 		 
+			 }
+			 if (tipo=="PF") $('.exibirPF').show();
+			 if (tipo=="PJ") $('.exibirPJ').show();
+			
+			
+		 }
+		 
+	
+			  jQuery.validator.setDefaults({success: "false"});
+		 jQuery.validator.addMethod("cnpj", function (value, element) {
+
+            var numeros, digitos, soma, i, resultado, pos, tamanho, digitos_iguais;
+            if (value.length == 0) {
+                return false;
+            }
+
+            value = value.replace(/\D+/g, '');
+            digitos_iguais = 1;
+
+            for (i = 0; i < value.length - 1; i++)
+                if (value.charAt(i) != value.charAt(i + 1)) {
+                    digitos_iguais = 0;
+                    break;
+                }
+            if (digitos_iguais)
+                return false;
+
+            tamanho = value.length - 2;
+            numeros = value.substring(0, tamanho);
+            digitos = value.substring(tamanho);
+            soma = 0;
+            pos = tamanho - 7;
+            for (i = tamanho; i >= 1; i--) {
+                soma += numeros.charAt(tamanho - i) * pos--;
+                if (pos < 2)
+                    pos = 9;
+            }
+            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            if (resultado != digitos.charAt(0)) {
+                return false;
+            }
+            tamanho = tamanho + 1;
+            numeros = value.substring(0, tamanho);
+            soma = 0;
+            pos = tamanho - 7;
+            for (i = tamanho; i >= 1; i--) {
+                soma += numeros.charAt(tamanho - i) * pos--;
+                if (pos < 2)
+                    pos = 9;
+            }
+
+            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+
+            return (resultado == digitos.charAt(1));
+        });
+		 
+			jQuery.validator.addMethod("cpf", function(value, element) {
+   value = jQuery.trim(value);
+
+    value = value.replace('.','');
+    value = value.replace('.','');
+    cpf = value.replace('-','');
+    while(cpf.length < 11) cpf = "0"+ cpf;
+    var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+    var a = [];
+    var b = new Number;
+    var c = 11;
+    for (i=0; i<11; i++){
+        a[i] = cpf.charAt(i);
+        if (i < 9) b += (a[i] * --c);
+    }
+    if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11-x }
+    b = 0;
+    c = 11;
+    for (y=0; y<10; y++) b += (a[y] * c--);
+    if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11-x; }
+
+    var retorno = true;
+    if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) retorno = false;
+
+    return this.optional(element) || retorno;
+
+}, "Informe um CPF válido");
+		 
+		 
+        $.validator.addMethod('igual', function (value, element, param) {
+            return this.optional(element) || value == $(param).val();
+        }, 'Invalid value');
+		 
+ 			 $("#formSafra").validate({
+			  rules: {
+				cpf: {
+				  required: true,
+				  cpf:true
+				},
+				  cnpj: {
+				  required: true,
+				  cnpj:true
+				},
+				email:{
+				  required: true
+				},
+				  nome:{
+				  required: true
+				},
+				  telefone:{
+					  required: true
+				  },
+				  emailConf:{
+					  required: true,
+					  igual:'#email'
+				  },
+				    telefoneConf:{
+					  required: true,
+						igual:'#telefone'
+				  },
+				  dataNascPF:{
+					  required: true
+				  },nomeMaePF:{
+					  required: true
+				  },
+				 
+				  cep:{
+				  required: true
+				},
+				   endereco:{
+				  required: true
+				},  numero:{
+				  required: true
+				},  complemento:{
+				  required: true
+				}, bairro:{
+				  required: true
+				},cidade:{
+				  required: true
+				},uf:{
+				  required: true
+				},
+				  telefone2:{
+				  required: true
+				},
+				   cpfJ:{
+				  required: true,
+					   cpf:true
+				},
+				   nomeJ:{
+				  required: true
+				},
+				   dataJ:{
+				  required: true
+				},
+				   nomeMaeJ:{
+				  required: true
+				},
+ 				receberem:{
+				  required: true
+				},
+			horarioEntrega:{
+				  required: true
+				},
+			cepEntrega:{
+				  required: true
+				},
+		enderecoEntrega:{
+				  required: true
+				},
+				  		numeroEntrega:{
+				  required: true
+				},
+				  bairroEntrega:{
+				  required: true
+				},cidadeEntrega:{
+				  required: true
+				},ufEntrega:{
+				  required: true
+				},
+				
+				  
+				  
+				  
+	 
+		      },
+			  messages: {
+				  
+				   cpf: {
+     					 required: "CPF e obrigatorio",
+    					  cpf: "CPF invalido"
+    					},
+				   cnpj: {
+     					 required: "CNPJ e obrigatorio",
+    					  cpf: "CNPJ invalido"
+    					},
+				  	email:{
+						  required: "E-mail e obrigatorio"
+						},
+				  	nome:{
+						  required: "Nome e obrigatorio"
+						},
+				  telefone:{
+						  required: "Telefone e obrigatorio"
+						},
+				  	  nomeMaeJ:{
+						  required: "Nome da Mae do socio e obrigatorio"
+						},
+				  	  cpfJ
+				  :{
+						  required: "CPF Socio e obrigatorio",
+							  cpf: "CPF Socio invalido"
+						},
+				  	  nomeJ:{
+						  required: "Nome do Socio e obrigatorio"
+						},
+				  	  dataJ:{
+						  required: "Data de Nascimento do Socio e obrigatorio"
+						},
+				   cep:{
+						  required: "CEP e obrigatorio"
+						},
+				  	   endereco:{
+						  required: "Endereco e obrigatorio"
+						},
+				    numero:{
+						  required: "Numero e obrigatorio"
+						},
+				  				    complemento:{
+						  required: "Complemento e obrigatorio"
+						},   bairro:{
+						  required: "Bairro e obrigatorio"
+						},cidade:{
+						  required: "Cidade e obrigatorio"
+						},
+				  uf:{
+						  required: "UF e obrigatorio"
+						},
+				    telefone2:{
+						  required: "Telefone 2 e obrigatorio"
+						}, 
+				   dataNascPF:{
+						  required: "Data Nascimento e obrigatorio"
+						}, 
+				   nomeMaePF:{
+						  required: "Nome da Mae e obrigatorio"
+						}, 
+				  	 
+				   telefoneConf:{
+					     required: "Confirmacao de Telefone deve ser preenchido",
+						  igual: "Confirmacao de Telefone  invalido"
+						},
+				   emailConf:{
+									     required: "Confirmacao de E-mail deve ser preenchido",
+						  igual: "Confirmacao de E-mail  invalido"
+						},
+				  		   receberem:{
+						  required: "Recebimento e obrigatorio"
+						}, 
+		   horarioEntrega:{
+						  required: "Horario de entrega e obrigatorio"
+						}, 
+				 cepEntrega:{
+						  required: "CEP e obrigatorio"
+						},
+	enderecoEntrega:{
+						  required: "Endereco e obrigatorio"
+						},bairroEntrega:{
+						  required: "Bairro e obrigatorio"
+						},numeroEntrega:{
+						  required: "Numero e obrigatorio"
+						},cidadeEntrega:{
+						  required: "Cidade e obrigatorio"
+						},ufEntrega:{
+						  required: "UF e obrigatorio"
+						},
+	
+				
+			  }
+			});
+			 
+		 
+
+						
+							
+							
+		exibirPasso();
+		
+	 </script>
+	 </form>
+ 
+</body></html>
